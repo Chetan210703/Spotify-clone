@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Spotify-Clone</title>
+</head>
+
+<body>
+    <div class="container bg-black">
+        <div class="left">
+            <div class="home rounded bg-grey">
+                <div class="cross">
+                    <div class="logo">
+                        <img width="100px" class="invert" src="svg/logo.svg" alt="spotify">
+                    </div>
+                    <img id="cross" src="svg/x.svg" alt="X">
+                </div>
+
+                <ul>
+                    <li><img class="invert" src="svg/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="svg/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey p1">
+                <div class="heading">
+                    <img class="invert" src="svg/library.svg" alt="">
+                    <h3>Your library</h3>
+                    <label for="file">
+                        <i style="cursor: pointer;" id="uploadIcon" class="fa-solid fa-plus"></i>
+                    </label>
+                    <input type="file" id="file" style="display: none;" />
+                </div>
+                <div class="songList">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp;
+                                PrivacyCenter</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey">
+            <div class="header">
+                <div class="hamburger">
+                    <div class="menu">
+                        <img width="33px" src="svg/menu.svg" alt="menu">
+                        <div class="nav">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="signBtn">Sign Up</button>
+                    <button class="loginBtn">Log in</button>
+                    <button class="switchBtn" data-state="night">
+                        <img src="svg/night.svg" alt="Night mode">
+                    </button>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="head">
+                    <h2>Spotify Playlist</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="cardContainer">
+                    <div class="cards">
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="abovebar">
+                    <div class="songName"></div>
+                    <div class="playbutton">
+                        <img id="previous" src="svg/previous.svg" alt="previous">
+                        <img id="play" src="svg/play.svg" alt="play">
+                        <img id="next" src="svg/next.svg" alt="next">
+                    </div>
+                    <div class="time"></div>
+                </div>
+                <div class="belowbar">
+                    <div class="seekbar">
+                        <div class="progress"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
